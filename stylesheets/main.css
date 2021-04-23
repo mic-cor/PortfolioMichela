@@ -1,0 +1,237 @@
+/*****GENERAL*****/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active {
+	nav li a:hover {
+		background-color: #ff4d4d;
+		border-radius: 3px;
+	}
+}
+
+img {
+	width: 100%
+}
+
+.title {
+	font-size: 2.2rem;
+	}
+
+main {
+	min-height: calc(100vh - 197px - 99.375px - 30px);
+	padding-top: 200px;
+}
+
+/*****HEADER*****/
+
+nav li a {
+	color: white;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+nav {
+	background-color: #e62e00;
+	padding: 15px;
+}
+
+header img {
+	width: 100px;
+}
+
+header {
+	background: #ffcc00;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header .logo-container {
+	padding: 20px;
+
+}
+
+nav ul li {
+display: inline-block;
+}
+
+/**********GALLERY**********/
+
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery .item {
+	flex: 0 1 50%;
+	width: 50%;
+	padding: 15px;
+	position: relative;
+}
+
+#gallery .caption {
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+#gallery .caption p {
+	margin: 0;	
+}
+
+element.style {
+	clear:left;
+}
+
+#gallery .caption img {
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*****ABOUT*****/
+#about img {
+	border-radius: 100%;
+	width: 70%
+}
+
+#about .profile-pic {
+	width: 50%;
+	float: left;
+	padding: 30px 15px 15px;
+	text-align: center;
+}
+
+#about .description {
+	width: 50%;
+	float: right;
+	padding: 30px 15px 15px;
+}
+
+#about img {
+	padding: 25px;
+}
+
+/*****CONTATTI*****/
+
+#contatti .info, #contatti .contatti  {
+	padding: 30px 15px 15px;
+
+}
+
+#contatti .info {
+	float: left;
+	width: 60%;
+	font-size: 20px;
+}
+
+#contatti .contatti {
+	float: right;
+	width: 40%;
+}
+
+#contatti ul {
+	list-style-type: none;
+		padding-left: 0px;
+	}
+
+#contatti li {
+	padding: 10px 0;
+}
+
+#contatti .material-icons {
+	float: left;
+}
+
+#contatti .contatti a {
+	margin: 3px 0 0 5px;
+	display: inline-block;
+}
+
+/**** FOOTER ****/
+
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+footer.main img {
+	width: 25px;
+}
+
+footer.main p {
+	font-size: 1.2rem;
+}
+
+/**********GALLERY**********/
+
+@media only screen and (min-width: 768px) {
+	
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo-container {
+	}
+
+	nav {
+		background: #ffcc00;
+	}
+
+	nav li a:hover {
+		background-color: #ff4d4d;
+		border-radius: 3px;
+	}
+
+}
+
+/**********GALLERY**********/
+
+@media only screen and (max-width: 767px) {
+	#gallery .item:nth-child(2n+1) {
+	clear: left;
+}
